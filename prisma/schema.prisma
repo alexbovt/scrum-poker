@@ -11,7 +11,7 @@ datasource db {
 }
 
 model User {
-  id           Int    @id @default(autoincrement())
+  id           String @id @default(uuid())
   name         String
   createdGames Game[] @relation("author_games")
   joinedGames  Game[] @relation("players_games")
@@ -21,6 +21,6 @@ model Game {
   id       String @id @default(uuid())
   title    String
   author   User   @relation("author_games", fields: [authorId], references: [id])
-  authorId Int
+  authorId String
   players  User[] @relation("players_games")
 }
