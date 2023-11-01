@@ -2,42 +2,24 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Welcome</title>
+	<meta name="description" content="Create or join a game" />
 </svelte:head>
 
 <section>
-	<h1>
-		Welcome to app. create a new esitmation session.
-	</h1>
+	<h1>Welcome 👋</h1>
+
+	<button>Create a new game</button>
+	<h2>Or</h2>
+	<button>Join an existing</button>
 </section>
 
 <style>
 	section {
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>
