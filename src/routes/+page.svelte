@@ -9,17 +9,18 @@
 <section>
 	<h1>Welcome 👋</h1>
 
-	<button>Create a new game</button>
+	<a href="/game/create">Create a new game</a>
 	<h2>Or</h2>
-	<button>Join an existing</button>
+	<a href="/game/join">Join an existing</a>
 </section>
 
 <style>
 	section {
-		height: 100vh;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: var(--header-height);
 	}
 </style>
